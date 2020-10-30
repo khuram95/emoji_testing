@@ -13,37 +13,10 @@ import 'emoji-mart/css/emoji-mart.css'
 
 const Emojis = (props) => {
 
-  const { classes, client, currentChannel } = props
+  const { classes } = props
   const [emojiPopup, setEmojiPopup] = useState(false)
-  // const sendMessage = (message) => {
-  //   client.mutate({
-  //     mutation: gql`
-  //     mutation($channelId: ID!, $message: String!) {
-  //       sendChannelMessage(channelId: $channelId, message: $message){
-  //         id
-  //         text
-  //         date
-  //         time
-  //       }
-  //     }
-  //     `,
-  //     variables: {
-  //       channelId: parseInt(currentChannel.id),
-  //       message: message
-  //     },
-  //   }).then(resp => {
-  //   })
-  // }
 
   const handleInputChange = (event) => {
-    let code = event.keyCode || event.which
-    // if (code == 13) {
-    //   (event.target.value != '') && ([
-    //     sendMessage(event.target.value),
-    //     event.preventDefault(),
-    //     event.currentTarget.value = "",
-    //   ])
-    // }
   }
 
   const openEmoji = (event) => {
